@@ -11,8 +11,6 @@ public class DiferencaHoras {
 
         Duration calculaDuracao = Duration.between(inicioTarefa, terminoTarefa);
 
-        LocalTime duracao = LocalTime.of((int) calculaDuracao.toHours(), calculaDuracao.toMinutesPart());
-
-        System.out.println("A tafera demorou "+duracao);
+        System.out.printf("A tarefa demorou %d:%02d%n", calculaDuracao.toHours(), calculaDuracao.toMinutesPart());
     }
 }
