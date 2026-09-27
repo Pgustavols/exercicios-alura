@@ -7,14 +7,18 @@ public class Produto {
     BigDecimal preco;
     int quantidade;
 
+    void exibirInformacoes(){
+        System.out.println("Produto: "+ nome);
+        System.out.printf("Preço: R$ %.2f\n", preco);
+        System.out.println("Quantidade em estoque: "+ quantidade);
+    }
+
     public static void main(String[] args) {
         Produto p = new Produto();
         p.nome = "Mouse gamer";
-        p.preco = new BigDecimal("159.90");
+        p.preco = new BigDecimal("159.900");
         p.quantidade = 25;
 
-        System.out.println("Produto: "+p.nome);
-        System.out.println("Preço: "+p.preco);
-        System.out.println("Quantidade em estoque: "+p.quantidade);
+        p.exibirInformacoes();
     }
 }
