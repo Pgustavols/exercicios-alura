@@ -1,4 +1,4 @@
-package heranca;
+package heranca.aluno;
 
 public class Bolsista extends Aluno{
     public Bolsista(String nome) {

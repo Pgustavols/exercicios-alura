@@ -1,4 +1,4 @@
-package heranca;
+package heranca.aluno;
 
 public class Main {
     public static void main(String[] args) {
