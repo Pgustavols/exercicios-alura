@@ -2,8 +2,8 @@ package heranca.controledispositivos;
 
 public class Main {
     public static void main(String[] args) {
-        Controlavel luz = new Luz();
-        Controlavel ar = new ArCondicionado();
+        Dispositivo luz = new Luz();
+        Dispositivo ar = new ArCondicionado();
 
         luz.ligar();
         luz.ligar();
